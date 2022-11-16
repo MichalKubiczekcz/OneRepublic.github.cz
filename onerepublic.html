@@ -1,0 +1,78 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>ONEREPUBLIC</title>
+  <link rel="stylesheet" href="onestyle.css" type="text/css" />
+  </head>
+  <body>
+ 	    <!-- V tomto divu "bg" se nachází obrázek, který je pozadí celého dokumentu -->
+      <div id="bg"><img src="imagines/one2.jpg" alt=""></div>
+     
+       <div id="menu">
+      <ul>
+         <li><a href="okapele.html">O KAPELE</a></li>
+         <li><a href="členové.html">ČLENOVÉ</a></li>
+         <li><a href="historie.html">HISTORIE</a></li>
+         <li><a href="alba.html">ALBA</a></li>
+         <li><a href="styl.html">HUDEBNÍ STYL</a></li>
+         <li><a href="fotgalery.html">FOTOGALERIE</a></li>
+         <li><a href="nominaceazisky.html">NOMINACE A ZISKY</a></li>
+         <li><a href="livevidea.html">LIVE VIDEA</a></li>
+         
+         
+             </ul> 
+     </div>
+	    <!-- V divu "container" se nachází samotný obsah -->
+      <div id="container">
+      <h1>ONE REPUBLIC</h1>
+        <p> Kdo by je neznal? One Republic !!! Světově známá kapela z Coloráda, která
+        se proslavila mnoha písněmi jako Counting Stars, Stop and Stare nebo Apologize. Tyto stránky vám je přiblíží trošku blíž, než 
+        jste je doposud znali.
+         </p>
+         
+         
+         <script>  
+         function validateJmeno(){
+              vstup = document.formular1.jmeno.value;
+              regJmeno = /^[_a-zA-Z0-9-]+$/;                          
+              if (regJmeno.test(vstup)==true) {
+              
+               document.getElementById('err').innerHTML = "<b style=\"color:green\"> Vaše přihlašovací jméno " + " je v pořádku.";}
+               
+              else  { document.getElementById('err').innerHTML = "<b style=\"color:red\"> Vaše přihlašovací jméno " + "</b><b style=\"color:red\"> je špatné!</b>";}
+        }    
+    </script>
+    
+    <script>  
+         function validateHeslo(){
+              vstup = document.formular2.heslo.value;
+              regHeslo = /^[_a-zA-Z0-9-]+$/;                          
+              if (regHeslo.test(vstup)==true) {
+              
+               document.getElementById('err').innerHTML = "<b style=\"color:green\"> Vaše přihlašovací heslo " + " je v pořádku.";}
+               
+              else  { document.getElementById('err').innerHTML = "<b style=\"color:red\"> Vaše přihlašovací heslo " + "</b><b style=\"color:red\"> je špatné!</b>";}
+        }    
+    </script>
+   
+    Přihlašovací jméno:<form action="#" name="formular1"> <input name="jmeno" value="">     
+      <input onclick="validateJmeno();" value="Ověřit" type="button"> </form>  <br>
+      
+      
+    Přihlašovací heslo:<form action="#" name="formular2"> <input name="heslo" value="">   
+      <input onclick="validateHeslo();" value="Ověřit" type="button"> </form>   <br>
+       
+      <p id="err"></p>
+       
+    
+         
+     </div>
+      <div id="footer">
+      Michal Kubiczek - ONE REPUBLIC / 2022
+      </div>
+ </body>
+  </body> 
+<html>
+  
